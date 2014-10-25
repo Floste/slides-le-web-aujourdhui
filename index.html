@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Le Web aujourd'hui</title>
+
+		<meta name="description" content="Présentation de ce qu'est le web aujourd'hui">
+		<meta name="author" content="Floste">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/local.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="background">
+			<iframe id="contentIframeBg" src="" height="100%" width="100%"></iframe>
+		</div>
+		<div id="backgroundOver">
+		</div>
+<script>
+window.onload = function(){
+	Reveal.addEventListener( 'slidechanged', function( event ) {
+	    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+    	if(event.currentSlide.getAttribute("rel")=="prefin" || event.currentSlide.getAttribute("rel")=="fin"){
+    		if(document.getElementById("backgroundOver").style.display != "block"){
+	    		document.getElementById("backgroundOver").style.display = "block";
+	    		document.getElementById("background").style.display = "block";
+	    		document.getElementById("contentIframeBg").setAttribute("src","http://webglsamples.googlecode.com/hg/aquarium/aquarium.html");
+    		}
+    	}else{
+    		document.getElementById("backgroundOver").style.display = "none";
+    		document.getElementById("background").style.display = "none";
+    		document.getElementById("contentIframeBg").setAttribute("src","");
+    	}
+	} );
+};
+</script>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<section>
+	<h1>C'est quoi le Web<br />aujourd'hui</h1>
+	<h3>Vocabulaire et contexte</h3>
+	<p>
+		<small>Created by <a href="http://www.floste.com">Floste</a> / <a href="http://twitter.com/floste56">@floste56</a></small>
+	</p>
+	<aside class="notes">
+		Pour voir comment lancer les notes
+	</aside>
+</section>
+
+<section>
+	<section>
+		<h1>Un peu d'histoire d'abord</h1>
+		<p>
+			Le web a une vingtaine d'année...seulement
+		</p>
+		<a href="http://www.evolutionoftheweb.com/#/evolution/night" target="_blank">Time Line Evolution du Web</a>
+
+		<aside class="notes">
+		</aside>
+	</section>
+	<section>
+		<h2>L'ère des pionniers et première guerre</h2>
+		<h3>1993 - 1998</h3>
+		<ul>
+			<li>1991 - 1992 : HTTP - HTML</li>
+			<li>1993 : Le CERN renonce aux droits d'auteur sur le WWW</li>
+			<li>1993 - 1997 : Mosaic (NCSA - Université de l'Illinois)</li>
+			<li>1994 : Yahoo</li>
+			<li>1995 : Netscape - Opéra - IE</li>
+			<li>1995 : SSL - Cookies - Javascript</li>
+			<li>1997 : Flash</li>
+			<li>1998 : AOL rachète Netscape</li>
+		</ul>
+		<aside class="notes">
+			1969 : premiere interconnexion de réseau.<br />
+			1989 : WWW par Tim Berners Lee
+		</aside>
+	</section>
+	<section>
+		<h2>L'égémonie de Microsoft</h2>
+		<h3>1998 - 2003</h3>
+		<ul>
+			<li>1998 : Fondation de Mozilla (Netscape)</li>
+			<li>1998 : Google</li>
+			<li>1999 : HTML 4 - CSS2 - AJAX</li>
+			<li>2002 : Internet Explorer V.6</li>
+			<li>2003 : près de 90% de parts de marché à IE</li>
+			<li>2003 : Safari</li>
+		</ul>
+		<aside class="notes">
+			Netscape produit payant et propriétaire (AOL).<br />
+			Ils décident de mettre en open source la version 5 en créant la fonction Mozilla.<br />
+			Ceux sont les prémices de Mozilla (navigateur, mail et composer).<br />
+			L'ère des sites optimisés pour tel ou tel navigateurs et résolution.<br />
+			Guerre dont les armes sont les avocats et les monopoles commerciaux<br />
+		</aside>
+	</section>
+	<section>
+		<h2>Un nouvel espoir ;)</h2>
+		<h3>2003 - 2008</h3>
+		<ul>
+			<li>2001 - 2006 : Aucune mise à jour majeur d'IE6</li>
+			<li>2003 : Mozilla, 2004 : Firefox</li>
+			<li>2004 : Facebook</li>
+			<li>2005 : Opera mini</li>
+			<li>2007 : 1er Iphone ("un gadget pour geek fortunés")</li>
+			<li>2007 : Abandon XHTML 2 au W3C</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Révolutions et nouvelle guerre</h2>
+		<h3>2008 - 2013</h3>
+		<ul>
+			<li>2008 - premier Draft HTML5 </li>
+			<li>2008 - WCAG 2.0</li>
+			<li>2008 - Chrome V.1</li>
+			<li>Nov. 2011 - Abandon de Flash sur mobile</li>
+			<li>2011 - WebGL</li>
+			<li>2012 - Windows 8</li>
+			<li>2013 - Firefox OS</li>
+		</ul>
+		<p>C'est aussi sans complexe que les gros éditeurs ne font plus d'efforts pour les anciennes versions de navigateur<br />(06/11/2013 : fin du suport IE9 pour Google, <a href="http://theie8countdown.com">theie8countdown.com</a>)</p>
+		<aside class="notes">
+			Aout 2010 : Hotmail incite ses utilisateurs a utiliser Chrome s'ils rencontrent des soucis<br />
+			Implication plus forte de Microsoft au W3C<br />
+			Implication plus forte de Adobe au W3C<br />
+			Octobre 2013 : Ovation à l'équipe de Dev de Microsoft France pour Babylon.js (webGL)<br />
+			Débauche de nouvelles specifications et course à l'implémentation dans les navigateurs.<br />
+			2011 : Google annonce qu'il ne supportera que les deux dernières versions d'IE
+		</aside>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h1>Comment ca marche le web</h1>
+		<blockquote cite="http://en.wikipedia.org/wiki/World_Wide_Web">
+			“The World Wide Web is a system of interlinked hypertext documents accessed via the Internet. With a web browser, one can view web pages that may contain text, images, videos, and other multimedia and navigate between them via hyperlinks.”
+		</blockquote>
+		<br />
+		Internet &ne; Web
+		<aside class="notes">
+			Le web est basé sur des documents hypertext interconnectés entre eux et accessible via Internet.<br />
+			Avec un navigateur, il est possible de consulter ces pages qui peuvent contenir du texte, des images, des vidéos, et plein d'autres média. On navigue ensuite entre ces documents via les liens.
+		</aside>
+	</section>
+	<section>
+		<h2>Fonctionnement Classique</h2>
+		<img src="images/fonctionnement-1-classique.png" alt="Fonctionnement Classique" />
+		<aside class="notes">
+		</aside>
+	</section>
+	<section>
+		<h2>Fonctionnement AJAX</h2>
+		<img src="images/fonctionnement-2-ajax.png" alt="Fonctionnement AJAX" />
+		<aside class="notes">
+		</aside>
+	</section>
+	<section>
+		<h2>Fonctionnement API</h2>
+		<img src="images/fonctionnement-3-api.png" alt="Fonctionnement API" />
+		<aside class="notes">
+		</aside>
+	</section>
+	<section>
+		<h2>Fonctionnement Application</h2>
+		<img src="images/fonctionnement-4-application.png" alt="Fonctionnement application" />
+		<aside class="notes">
+		</aside>
+	</section>
+	<section>
+		<h2>Technologie Serveur - Backend</h2>
+		<p class="accroche">L'objectif de ces technologies est de retourner des données en fonction de ce qui est demandé au serveur (requête HTTP).</p>
+		<ul>
+			<li>Serveur web : <span>Apache 52%, IIS 20%, Nginx 14%, NodeJS</span></li>
+			<li>Langage backend : <span>PHP, Python, .NET, Ruby, Javascript, (ASP)</span></li>
+			<li>Serveur BDD : <span>Mysql, Postgress, MariaDB, Oracle, SQL Server</span></li>
+			<li>Framework : <span>symfony, Zend, Ruby On Rails</span></li>
+		</ul>
+		<aside class="notes">
+			chiffres Netcraft Juillet 2013
+		</aside>
+	</section>
+	<section>
+		<h2>Format de données</h2>
+		<p class="accroche">Les données sont transmises au navigateur suivant différents format.</p>
+		<ul>
+			<li>Classique : <span>HTML</span></li>
+			<li>API / services : <span>JSon, XML, RSS</span></li>
+			<li>Media : <span>images, vidéo, audio</span></li>
+		</ul>
+		<aside class="notes">
+		</aside>
+	</section>
+	<section>
+		<h2>Technologie navigateur - FrontEnd</h2>
+		<p class="accroche">C'est ici que l'expérience utilisateur se vie et les données affichées.</p>
+		<ul>
+			<li>Informations : <span>HTML</span></li>
+			<li>Mise en forme / animation : <span>CSS</span></li>
+			<li>Comportement : <span>Javascript</span></li>
+		</ul>
+		<aside class="notes">
+		</aside>
+	</section>
+
+	<section>
+		<h2>HTML5</h2>
+		<ul id="bloc_html5">
+			<li class="fragment"><img src="images/html5-logo/html5_css3_styling.svg" alt="Css3 styling"/>
+				Style css3
+				<span>arrondies, ombres, webfonts, ...</span>
+			</li>
+			<li class="fragment"><img src="images/html5-logo/html5_multimedia.svg" alt="Multimedia"/>
+				Multimedia
+				<span>Audio et video</span>
+			</li>
+			<li class="fragment"><img src="images/html5-logo/html5_semantics.svg" alt="semantics"/>
+				Semantics
+				<span>nouvelles balises, RDFa, microFormat</span>
+			</li>
+			<li class="fragment"><img src="images/html5-logo/html5_perfintegration.svg" alt="Perfintegration"/>
+				Performance et integration
+				<span>WebWorker et XMLHttpRequest 2</span>
+			</li>
+			<li class="fragment"><img src="images/html5-logo/html5_3d_effects.svg" alt="3d effects"/>
+				Efftets 3D
+				<span>SVG, Canvas, WebGL, and CSS3 3D features</span>
+			</li>
+			<li class="fragment">
+				<img src="images/html5-logo/html5_connectivity.svg" alt="Connectivity"/>
+				Connectivité
+				<span>Web Sockets and Server-Sent Events (node.js)</span>
+			</li>
+			<li class="fragment">
+				<img src="images/html5-logo/html5_device_access.svg" alt="Device access"/>
+				Accès au terminal
+				<span>Geolocation API, audio/video input, contacts and events, tilt orientation</span>
+			</li>
+			<li class="fragment"><img src="images/html5-logo/html5_offline_storage.svg" alt="Offline storage"/>
+				Stockage Offline
+				<span>HTML5 App Cache, Local Storage, Indexed DB, and the File API</span>
+			</li>
+		</ul>
+		<aside class="notes">
+		</aside>
+	</section>
+</section>
+
+<section>
+	<h1>Ca sert à quoi</h1>
+	<ul>
+		<li>Ventes en ligne</li>
+		<li>Vitrine</li>
+		<li>Marketing - Collecte</li>
+		<li>Information</li>
+		<li>Culture</li>
+		<li>Formation</li>
+		<li>Social</li>
+		<li>Jeux</li>
+	</ul>
+</section>
+
+<section>
+	<h1>Comment on y accède</h1>
+	<ul>
+		<li>Ordinateur</li>
+		<li>Tablette</li>
+		<li>Smartphone</li>
+		<li>TV</li>
+		<li>E-reader</li>
+		<li>Console portable</li>
+		<li>...et...</li>
+		<li>Lunette</li>
+		<li>Montre</li>
+		<li>Vocal</li>
+	</ul>
+</section>
+
+<section>
+	<section>
+		<h1>Qui fait le web</h1>
+	</section>
+	<section>
+		<h1>Les organismes et entreprises</h1>
+		<ul>
+			<li>Spec et normalisation : <br /><span>W3C (~385 membres),</span></li>
+			<li>Editeurs de navigateur : <br /><span>Mozilla, Google, Microsoft, Opera, Apple</span></li>
+			<li>Communautés Open Source : <br /><span>Yahoo, Jquery</span></li>
+			<li>Editeurs de CMS</li>
+			<li>Editeurs de sites et animateurs</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Les métiers</h2>
+		<ul style="float:left;">
+			<li>Documentaliste, Editeur</li>
+			<li>Web Design<ul>
+				<li>Ergonome</li>
+				<li>Graphisme</li>
+				<li>Accessibilité</li>
+			</ul></li>
+			<li>Contenu / animation<ul>
+				<li>Redacteurs</li>
+				<li>SEO / Referencement</li>
+				<li>Community manager</li>
+				<li>Marqueting</li>
+			</ul></li>
+		</ul>
+		<ul style="float:right;">
+			<li>Gestion de projet</li>
+			<li>Réalisation<ul>
+				<li>Architecte</li>
+				<li>Developpeur back</li>
+				<li>Intégrateur (Dév. front)</li>
+			</ul></li>
+			<li>Hébergement<ul>
+				<li>Performance Web</li>
+				<li>Administration BDD</li>
+				<li>Administration OS</li>
+				<li>Administration réseaux</li>
+				<li>Expert sécurité</li>
+			</ul></li>
+		</ul>
+	</section>
+</section>
+<section rel="prefin">
+	<h1>Et demain ?</h1>
+	<p>
+		Les technos web prennent de plus en plus d'importance dans tous les domaine de l'informatique.
+	</p>
+	<ul>
+		<li>Techno : Windows 8, Firefox OS</li>
+		<li>Informations contextuels : Big Data, Semantique</li>
+		<li>Jeux</li>
+		<li>Santé : quantified self</li>
+		<li>Priorité 2013 du W3C : <ul>
+			<li>Terminaux mobiles</li>
+			<li>Normé le paiement en ligne</li>
+		</ul></li>
+	</ul>
+</section>
+
+<section rel="fin">
+	<h1>THE END</h1>
+	<h3>Floste - Stéphane Florentin</h3>
+</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+			    multiplex: {
+			        // Example values. To generate your own, see the socket.io server instructions.
+			        secret: '13860025763653384655', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+			        id: 'c82c9b224c1a4c85', // Obtained from socket.io server
+			        url: 'http://localhost:1948' // Location of socket.io server
+			    },
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			        { src: 'socket.io/socket.io.js', async: true },
+			        { src: 'plugin/notes-server/client.js', async: true },
+			        { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+			        { src: 'plugin/multiplex/master.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+</html>
