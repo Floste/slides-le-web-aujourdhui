@@ -1,0 +1,59 @@
+.reveal section img{
+	border: none;
+	background: transparent;
+	box-shadow: none;
+}
+
+section p.accroche{
+	font-size: O.7em;
+	font-style: italic;
+	margin: 15px 0px;
+}
+
+section li span{
+	color: #cccccc;
+}
+
+#background{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background: radial-gradient(circle farthest-corner at center center , #555A5F 0%, #1C1E20 100%) repeat scroll 0 0 #2B2B2B;
+	display: none;
+}
+#backgroundOver{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:9999px;
+	height:9999px;
+	background:rgba(0,0,75,0.7);
+	display: none;
+}
+#bloc_html5{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#bloc_html5 li{
+	display: block;
+	width: 50%;
+	float: left;
+	list-style: none;
+}
+#bloc_html5 li:nth-child(odd){
+	clear: both;
+}
+#bloc_html5 li img{
+	width: 20%;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 10%;
+}
+#bloc_html5 li span{
+	display: block;
+	font-size: 0.7em;
+}
+
