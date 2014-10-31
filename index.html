@@ -14,12 +14,12 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
-		<link rel="stylesheet" href="css/local.css" id="theme">
+		<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="local.css" id="theme">
 
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
 		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
 
@@ -81,15 +81,14 @@ window.onload = function(){
 	</section>
 	<section>
 		<h2>L'ère des pionniers et première guerre</h2>
-		<h3>1993 - 1998</h3>
+		<h3>1989 - 1998</h3>
 		<ul>
-			<li>1991 - 1992 : HTTP - HTML</li>
+			<li>1989 : URL, HTTP, HTML (Cern - Tim Berners Lee)</li>
 			<li>1993 : Le CERN renonce aux droits d'auteur sur le WWW</li>
 			<li>1993 - 1997 : Mosaic (NCSA - Université de l'Illinois)</li>
-			<li>1994 : Yahoo</li>
-			<li>1995 : Netscape - Opéra - IE</li>
-			<li>1995 : SSL - Cookies - Javascript</li>
+			<li>1995 : Netscape 2 (Javascript)</li>
 			<li>1997 : Flash</li>
+			<li>1998 : Internet Explorer 5 (AJAX)</li>
 			<li>1998 : AOL rachète Netscape</li>
 		</ul>
 		<aside class="notes">
@@ -110,7 +109,7 @@ window.onload = function(){
 		</ul>
 		<aside class="notes">
 			Netscape produit payant et propriétaire (AOL).<br />
-			Ils décident de mettre en open source la version 5 en créant la fonction Mozilla.<br />
+			Ils décident de mettre en open source la version 5 en créant la fondation Mozilla.<br />
 			Ceux sont les prémices de Mozilla (navigateur, mail et composer).<br />
 			L'ère des sites optimisés pour tel ou tel navigateurs et résolution.<br />
 			Guerre dont les armes sont les avocats et les monopoles commerciaux<br />
@@ -121,11 +120,12 @@ window.onload = function(){
 		<h3>2003 - 2008</h3>
 		<ul>
 			<li>2001 - 2006 : Aucune mise à jour majeur d'IE6</li>
-			<li>2003 : Mozilla, 2004 : Firefox</li>
+			<li>2003 : Mozilla</li>
+			<li>2004 : Firefox - Innovation par les standarts</li>
 			<li>2004 : Facebook</li>
 			<li>2005 : Opera mini</li>
 			<li>2007 : 1er Iphone ("un gadget pour geek fortunés")</li>
-			<li>2007 : Abandon XHTML 2 au W3C</li>
+			<li>2007 : Abandon XHTML 2 au W3C au profit de HTML5</li>
 		</ul>
 	</section>
 	<section>
@@ -167,18 +167,21 @@ window.onload = function(){
 	</section>
 	<section>
 		<h2>Fonctionnement Classique</h2>
+		<h3>Schéma historique</h3>
 		<img src="images/fonctionnement-1-classique.png" alt="Fonctionnement Classique" />
 		<aside class="notes">
 		</aside>
 	</section>
 	<section>
 		<h2>Fonctionnement AJAX</h2>
+		<h3>Courant sur presque tous les sites actuels</h3>
 		<img src="images/fonctionnement-2-ajax.png" alt="Fonctionnement AJAX" />
 		<aside class="notes">
 		</aside>
 	</section>
 	<section>
-		<h2>Fonctionnement API</h2>
+		<h2>Fonctionnement deconnecté</h2>
+		<h3>(Services offline)</h3>
 		<img src="images/fonctionnement-3-api.png" alt="Fonctionnement API" />
 		<aside class="notes">
 		</aside>
@@ -193,13 +196,15 @@ window.onload = function(){
 		<h2>Technologie Serveur - Backend</h2>
 		<p class="accroche">L'objectif de ces technologies est de retourner des données en fonction de ce qui est demandé au serveur (requête HTTP).</p>
 		<ul>
-			<li>Serveur web : <span>Apache 52%, IIS 20%, Nginx 14%, NodeJS</span></li>
-			<li>Langage backend : <span>PHP, Python, .NET, Ruby, Javascript, (ASP)</span></li>
-			<li>Serveur BDD : <span>Mysql, Postgress, MariaDB, Oracle, SQL Server</span></li>
-			<li>Framework : <span>symfony, Zend, Ruby On Rails</span></li>
+			<li><strong>Serveur web</strong> : <br /><span>Apache 52%, Nginx 14%, IIS 11%, NodeJS</span></li>
+			<li><strong>Langage backend</strong> : <br /><span>PHP, Python, .NET, Ruby, Javascript, (ASP)</span></li>
+			<li><strong>Serveur BDD</strong> : <br /><span>Mysql, Postgress, MariaDB, Oracle, SQL Server</span></li>
+			<li><strong>Framework</strong> : <br /><span>symfony, Zend, Express</span></li>
 		</ul>
 		<aside class="notes">
-			chiffres Netcraft Juillet 2013
+			chiffres Netcraft Avril 2014
+			http://news.netcraft.com/archives/2014/04/02/april-2014-web-server-survey.html
+			NodeJS 2009. En 2013 : utilisé par Paypal et Wellmart.
 		</aside>
 	</section>
 	<section>
@@ -285,16 +290,23 @@ window.onload = function(){
 <section>
 	<h1>Comment on y accède</h1>
 	<ul>
-		<li>Ordinateur</li>
-		<li>Tablette</li>
-		<li>Smartphone</li>
-		<li>TV</li>
-		<li>E-reader</li>
-		<li>Console portable</li>
-		<li>...et...</li>
-		<li>Lunette</li>
-		<li>Montre</li>
-		<li>Vocal</li>
+		<span class="fragment">
+			<li>Ordinateur</li>
+			<li>Tablette</li>
+			<li>Smartphone</li>
+		</span>
+		<span class="fragment">
+			<li>TV</li>
+			<li>E-reader</li>
+			<li>Console portable</li>
+			<li>...et...</li>
+		</span>
+		<span class="fragment">
+			<li>Lunette</li>
+			<li>Montre</li>
+			<li>Vocal</li>
+			<li>...y'a t'il un devin dans la salle</li>
+		</span>
 	</ul>
 </section>
 
@@ -303,7 +315,8 @@ window.onload = function(){
 		<h1>Qui fait le web</h1>
 	</section>
 	<section>
-		<h1>Les organismes et entreprises</h1>
+		<h1 style="white-space:nowrap;">Organisations ouvertes</h1>
+		<h2 style="white-space:nowrap;">Fondations, entreprises, particuliers</h2>
 		<ul>
 			<li>Spec et normalisation : <br /><span>W3C (~385 membres),</span></li>
 			<li>Editeurs de navigateur : <br /><span>Mozilla, Google, Microsoft, Opera, Apple</span></li>
@@ -333,12 +346,12 @@ window.onload = function(){
 			<li>Réalisation<ul>
 				<li>Architecte</li>
 				<li>Developpeur back</li>
-				<li>Intégrateur (Dév. front)</li>
+				<li>Developpeur front</li>
 			</ul></li>
 			<li>Hébergement<ul>
 				<li>Performance Web</li>
 				<li>Administration BDD</li>
-				<li>Administration OS</li>
+				<li>Administration Systemes</li>
 				<li>Administration réseaux</li>
 				<li>Expert sécurité</li>
 			</ul></li>
@@ -348,17 +361,15 @@ window.onload = function(){
 <section rel="prefin">
 	<h1>Et demain ?</h1>
 	<p>
-		Les technos web prennent de plus en plus d'importance dans tous les domaine de l'informatique.
+		Les technos web prennent de plus en plus d'importance dans tous les domaines de l'informatique.
 	</p>
 	<ul>
-		<li>Techno : Windows 8, Firefox OS</li>
+		<li>Technos : Windows 8, Firefox OS</li>
 		<li>Informations contextuels : Big Data, Semantique</li>
 		<li>Jeux</li>
 		<li>Santé : quantified self</li>
-		<li>Priorité 2013 du W3C : <ul>
-			<li>Terminaux mobiles</li>
-			<li>Normé le paiement en ligne</li>
-		</ul></li>
+		<li>28 Octobre 2014 : Specif HTML5 V1.0
+		</li>
 	</ul>
 </section>
 
@@ -371,8 +382,8 @@ window.onload = function(){
 
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.min.js"></script>
 
 		<script>
 
@@ -396,16 +407,16 @@ window.onload = function(){
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-			        { src: 'socket.io/socket.io.js', async: true },
-			        { src: 'plugin/notes-server/client.js', async: true },
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			        { src: 'reveal.js/socket.io/socket.io.js', async: true },
+			        { src: 'reveal.js/plugin/notes-server/client.js', async: true },
 			        { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-			        { src: 'plugin/multiplex/master.js', async: true }
+			        { src: 'reveal.js/plugin/multiplex/master.js', async: true }
 				]
 			});
 		</script>
